@@ -154,51 +154,16 @@
         <div class="social-media">
             <h3>Follow Us</h3>
             <!-- Add links to your social media profiles -->
-            <a href="https://www.facebook.com/[YourFacebookPage]" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/[https://www.instagram.com/designate_ads_agency/]" target="_blank">Instagram</a>
-            <p>WhatsApp: 061 130 4418</p>
+            <a href="https://www.facebook.com/profile.php?id=100071558336938" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/designate_ads_agency/" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/channel/UCMNf_JrhymAK6RiIq0_GbTg" target="_blank">LinkedIn</a>
+
         </div>
     </footer>
 
     <script>
         function submitForm() {
-            // Get form data
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            // Create an object to send the form data
-            const formData = {
-                name: name,
-                email: email,
-                message: message
-            };
-
-            // Send form data using AJAX
-            const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'designateads@gmail.com', true);
-            // Set proper Content-Type header
-            xhr.setRequestHeader('Content-Type', 'application/json');
-
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        // Handle the server response (you can customize this part)
-                        console.log('Form submitted successfully:', xhr.responseText);
-                        // You can add further actions here, like showing a success message to the user
-                    } else {
-                        // Handle errors
-                        console.error('Error submitting form:', xhr.status, xhr.statusText);
-                        // You can add further actions here, like showing an error message to the user
-                    }
-                }
-            };
-
-            // Convert formData object to JSON
-            const jsonData = JSON.stringify(formData);
-
-            // Send the request with JSON data
-            xhr.send(jsonData);
+            
         }
     </script>
 </body>
